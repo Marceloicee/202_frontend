@@ -1,0 +1,109 @@
+v<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio de Férias</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .item-ferias {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .item-ferias:hover {
+            transform: translateY(-5px);
+        }
+        .imagem-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            border-bottom: 2px solid #eee;
+        }
+        .conteudo {
+            padding: 1.5rem;
+        }
+        h2 { margin-top: 0; color: #2c3e50; }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Minhas Férias Inesquecíveis</h1>
+        <p>O que eu fiz nas férias</p>
+    </header>
+
+    <div class="container">
+        <div class="galeria">
+            <article class="item-ferias">
+                <div class="imagem-placeholder">
+                    <img src="image/image.png" alt="" style="width:100%; height:100%; object-fit:cover; display:block;">
+                </div>
+                <div class="conteudo">
+                    <h2>1</h2>
+                    <p>joguei videogame</p>
+                </div>
+            </article>
+            <article class="item-ferias">
+                <div class="imagem-placeholder">
+                    <img src="imagensporno/date1.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;">
+                </div>
+                <div class="conteudo">
+                    <h2>2</h2>
+                    <p>fiz muitos dates com a minha namorada</p>
+                </div>
+            </article>
+
+            <article class="item-ferias">
+                <div class="imagem-placeholder">
+                    <img src="image/mar-lindo-praia-lagoinha-do-leste-florianopolis-sc.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;">
+                </div>
+                <div class="conteudo">
+                    <h2>3</h2>
+                    <p>Fui pra santa catarina</p>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+
+
+</body>
+</html>
